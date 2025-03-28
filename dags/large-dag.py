@@ -7,7 +7,7 @@ with DAG(
     schedule=None,
     start_date=(pendulum.datetime(2024, 12, 1, tz="UTC")),
 ):
-    for i in range(100):
+    for i in range(50):
         BashOperator(
             task_id=f"task_{i}",
             bash_command="true",
